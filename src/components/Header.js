@@ -7,7 +7,7 @@ function Header() {
       <NavMenu>
         <a>
           <img src="/images/home-icon.svg"/>
-          <span>Home</span>
+          <span>HOME</span>
         </a>
         <a>
           <img src="/images/search-icon.svg"/>
@@ -74,7 +74,16 @@ const NavMenu = styled.div`
         bottom:-6px;
         position:absolute;
         background:white;
-        
+        opacity:0;
+        transform-origin:center;
+        transition: all 250ms cubic-bezier(0.25,0.46,0.45,0.94) 0s;
+        transform:scaleX(0);
+      }
+    }
+    &:hover{
+      span:after{
+        transform:scaleX(1);
+        opacity:1;
       }
     }
   }`
