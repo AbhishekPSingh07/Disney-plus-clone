@@ -12,6 +12,7 @@ function ImgSlider() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true
+        
     }
   return (
     <Carousel {...settings}>
